@@ -1,0 +1,414 @@
+<div id="main_container">
+  <!-- Navbar section -->
+  <nav id="navbar">
+  {% if page.menu %}
+    <div class="container">
+      <form id="reuseable">
+        <input type="text" id="search" />
+        <span class="search_div"><i class="fas fa-search"></i></span>
+      </form>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fas fa-bars burger_icon" id="burgerG"></i>
+      </a>
+
+      <div class='container' id='subcontainer'>
+        {{ page.menu }}
+      </div>
+      
+{# <ul id="order1">
+      <li class="nav_list_items">
+        <a href="#" class="first_element">Sign Up</a>
+      </li>
+      <li class="nav_list_items">
+        <a href="#" class="all">Login</a>
+      </li>
+      <li class="nav_list_items">
+        <a href="#" class=" all"> RSS Feed</a>
+      </li>
+       <li class="nav_list_items">
+        <a href="#" class=" all"> Archived News</a>
+      </li>
+    </ul> #}
+
+      {# <form id="order2">
+        <input type="text" />
+        <span class="search_div">
+          <img src="{{ directory }}/images/search.png"
+            alt=""
+            style="width:70%" />
+        </span>
+      </form> #}
+      
+    </div>
+    {% endif %}
+  </nav>
+  <!-- Header section start -->
+  {% if page.header %}
+  <header id="header">
+    <div class="container">
+      <div class='container' id='subcontainer'>
+    {{page.header}}
+      </div>
+      {# <ul class="logo_section">
+        <li>
+          <figure>
+            <img src="{{ directory }}/images/logo.png"
+              alt="Trulli"
+              style="width:100%" />
+          </figure>
+        </li>
+      </ul> #}
+
+      {# <ul class="social_icons">
+        <li>
+          <img src="{{ directory }}/images/linkedin.png"
+            alt=""
+            style="width:50%" />
+        </li>
+        <li>
+          <img src="{{ directory }}/images/twitter.png"
+            alt=""
+            style="width:50%" />
+        </li>
+        <li>
+          <img src="{{ directory }}/images/pinterest.png"
+            alt=""
+            style="width:50%" />
+        </li>
+        <li>
+          <img src="{{ directory }}/images/googleplus.png"
+            alt=""
+            style="width:50%" />
+        </li>
+        <li style="margin-right: 0px;">
+          <img src="{{ directory }}/images/wifi-signal.png"
+            alt=""
+            style="width:60%" />
+        </li>
+      </ul> #}
+    </div>
+  </header>
+  {% endif %}
+
+  <!-- Navigation Menu Start -->
+  {% if page.primary_menu %}
+  <main id="menu_bar">
+    <div class="container">
+      <nav class="bar">
+        <a href="#" id="bar_header">NAVIGATION</a>
+        {{page.primary_menu}}
+        {# <ul class="group_items" id="menu_items">
+          <li class="item">Home page</li>
+          <li class="item">Style demo</li>
+          <li class="item">full width</li>
+          <li class="item">drop down</li>
+          <li class="item">gallary</li>
+          <li class="item">portfolio</li>
+          <li class="item">link text</li>
+          <li class="item">long link text</li>
+        </ul> #}
+        <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+          <i class="fas fa-bars burger_icon" id="burgerG1"></i>
+        </a>
+      </nav>
+    </div>
+  </main>
+  {% endif %}
+
+  <!-- Intro Section Start -->
+  {% if page.secondary_menu %}
+  <div id="intro">
+    <div class="container">
+    <div class='container' id='subcontainer'>
+      {{page.secondary_menu}}
+      {# <ul>
+        <li>
+          <figure>
+            <img src="{{ directory }}/images/image1.png" alt="Trulli" />
+          </figure>
+        </li>
+      </ul>
+      <ul>
+        <li class="content">
+          <h1>
+            A HUGE TITLE HERE
+          </h1>
+          <p>
+            Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur
+            pede. Idet mollisi eros dis orci congue elis et curabitur consequam
+            intesque. Curabiturpisametur in ante.
+          </p>
+          <a href="#"><span>READ MORE »</span></a>
+        </li>
+      </ul> #}
+      </div>
+    </div>
+  </div>
+{% endif %}
+  <!-- content section start from here -->
+
+{% if page.contenta %}
+  <div id="content">
+    <div class="container">
+      <div class="headings">
+        <section>
+          <ul class="flex-grid">
+            {# <li class="col" style="padding-left: 0;">
+              <ul class="flex-grid-first">
+                <li class="flex-grid1">A little About Us</li>
+              </ul>
+              <div class="image_cover">
+                <figure>
+                  <img src="{{ directory }}/images/290x140.png"
+                    alt="Trulli"
+                    style="width: 100%;" />
+                </figure>
+              </div>
+              <p class="image_detail">
+                Justoid nonummy laoreet phasellent penatoque in antesque pellus
+                elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet
+                tincidunt ut vel velit nonummy laoreet phasellent penatoque in
+                antesque pellus elis eget tincidunt.<br /><br />
+
+                Idenim semper pellente velis felit ac. Justoid nonummy laoreet
+                phasellent penatoque in antesque pellus elis eget tincidunt.
+              </p>
+              <a href="#" class="button"><span>Read More About Us »</span></a>
+            </li> #}
+            {# <li class="col">
+              <ul class="flex-grid-first">
+                <li class="flex-grid1">Some of Our Services</li>
+              </ul>
+
+              <section class="card">
+                <figure>
+                  <img src="{{ directory }}/images/64x64.png" alt="Trulli" />
+                </figure>
+                <article class="text">
+                  <h5>
+                    Service Name
+                  </h5>
+                  <p>
+                    Inteligula congue id elis donec sce sag ittis intes id
+                    laoreet aenean.
+                  </p>
+                </article>
+              </section>
+              <section class="card">
+                <figure>
+                  <img src="{{ directory }}/images/64x64.png" alt="Trulli" />
+                </figure>
+                <article class="text">
+                  <h5>
+                    Service Name
+                  </h5>
+                  <p>
+                    Inteligula congue id elis donec sce sag ittis intes id
+                    laoreet aenean.
+                  </p>
+                </article>
+              </section>
+              <section class="card">
+                <figure>
+                  <img src="{{ directory }}/images/64x64.png" alt="Trulli" />
+                </figure>
+                <article class="text">
+                  <h5>
+                    Service Name
+                  </h5>
+                  <p>
+                    Inteligula congue id elis donec sce sag ittis intes id
+                    laoreet aenean.
+                  </p>
+                </article>
+              </section>
+              <section class="card">
+                <figure style="padding-bottom: 12px;">
+                  <img src="{{ directory }}/images/64x64.png" alt="Trulli" />
+                </figure>
+                <article class="text">
+                  <h5>
+                    Service Name
+                  </h5>
+                  <p>
+                    Inteligula congue id elis donec sce sag ittis intes id
+                    laoreet aenean.
+                  </p>
+                </article>
+              </section>
+              <a href="#" class="button"><span>Read More About Us »</span></a>
+            </li> #}
+            {# <li class="col">
+              <ul class="flex-grid-first">
+                <li class="flex-grid1">What our Client Say</li>
+              </ul>
+              <article>
+                <div class="title_part">
+                  <figure>
+                    <img src="{{ directory }}/images/CompositePath.png"
+                      alt="Trulli" />
+                  </figure>
+                  <strong>
+                    Tommy Tanker
+                    <span style="font-weight: 100;">- CEO</span>
+                  </strong>
+                </div>
+                <p class="intro_detail">
+                  Justoid nonummy laoreet phasellent penatoque in antesque
+                  pellus elis eget tincidunt. Nequatdui laorem justo a non
+                  tellus laoreet tincidunt ut vel velit. Idenim semper pellente
+                  velis felit ac nullam pretium morbi lacus.
+                </p>
+                <a href="#" class="button"><span>View This Project »</span></a>
+              </article>
+              <article>
+                <div class="title_part">
+                  <figure>
+                    <img src="{{ directory }}/images/CompositePath.png"
+                      alt="Trulli" />
+                  </figure>
+                  <strong>
+                    Tommy Tanker
+                    <span style="font-weight: 100;">- CEO</span>
+                  </strong>
+                </div>
+                <p class="intro_detail">
+                  Justoid nonummy laoreet phasellent penatoque in antesque
+                  pellus elis eget tincidunt. Nequatdui laorem justo a non
+                  tellus laoreet tincidunt ut vel velit. Idenim semper pellente
+                  velis felit ac nullam pretium morbi lacus.
+                </p>
+                <a href="#" class="button"><span>View This Project »</span></a>
+              </article>
+            </li> #}
+            {{page.contenta}}
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Footer Section start -->
+  {% if page.footer %}
+  <footer id="footer">
+    <div class="container">
+      <div class="footer_container">
+        <ul class="flex-grid">
+        {{page.footer}}
+          {# <li class="col1 col">
+            <h2>
+              Latest tweets
+            </h2>
+            <p>
+              <span style="color: #ba2e1f; cursor: pointer;">@namehere</span>
+              Justoid nonummy laoreet phasellent penatoque in antesque pellus elis
+              eget tincidunt. Nequatdui laorem justo a non tellus. 1 day ago
+            </p>
+            <p>
+              <span style="color: #ba2e1f; cursor: pointer;">@namehere</span>
+              Justoid nonummy laoreet phasellent penatoque in antesque pellus elis
+              eget tincidunt. Nequatdui laorem justo a non tellus. 1 day ago
+            </p>
+          </li> #}
+          {# <li class="col2 col">
+            <h2>
+              Quick links
+            </h2>
+            <ul class="bullet_list">
+              <li class="bullets"><a href="#">Lorem ipsum dolor sit</a></li>
+              <li class="bullets"><a href="#">Amet consectetur</a></li>
+              <li class="bullets"><a href="#">Praesent vel sem id</a></li>
+              <li class="bullets"><a href="#">Curabitur hendrerit est</a></li>
+              <li class="bullets">
+                <a href="#">Aliquam eget erat nec sapien</a>
+              </li>
+              <li class="bullets"><a href="#">Cras id augue nunc</a></li>
+              <li class="bullets"><a href="#">In nec justo non</a></li>
+              <li class="bullets"><a href="#">Vivamus mollis enim ut</a></li>
+              <li class="bullets"><a href="#">Curabitur hendrerit est</a></li>
+              <li class="bullets"><a href="#">Sed a nulla urna</a></li>
+            </ul>
+          </li> #}
+          {# <li class="col3 col">
+            <h2>
+              Latest Blog Posts
+            </h2>
+            <h6>
+              Post Title
+            </h6>
+            <p class="address">
+              <span style="color: #ba2e1f; cursor: pointer;">Admin,</span>domainname.com<br />
+              Friday, 6th April 2000
+            </p>
+            <p class="subtext">
+              Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi
+              a tellus consequat imperdiet.
+            </p>
+            <a href="#" class="footer_button"><span>Read More »</span></a>
+            <h6>
+              Post Title
+            </h6>
+            <p class="address">
+              <span style="color: #ba2e1f; cursor: pointer;">Admin,</span>domainname.com<br />
+              Friday, 6th April 2000
+            </p>
+            <p class="subtext">
+              Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi
+              a tellus consequat imperdiet.
+            </p>
+            <a href="#" class="footer_button"><span>Read More »</span></a>
+          </li> #}
+          {# <li class="col4 col">
+            <h2>
+              Contact us
+            </h2>
+            <form name="contactForm"
+              onsubmit="return validate()"
+              action="/submit.php"
+              method="post">
+              <input type="text"
+                size="25"
+                id="fname"
+                name="Name"
+                placeholder="Name"
+                style="margin-top: 0;" />
+              <input type="text"
+                size="25"
+                id="femail"
+                name="Email"
+                placeholder="Email" />
+              <input type="text"
+                id="fsubject"
+                name="Subject"
+                placeholder="Subject" />
+              <textarea rows="3" cols="24" placeholder="Message"></textarea>
+              <input type="submit"
+                value="SUBMIT"
+                class="button"
+                name="Submit" />
+            </form>
+          </li> #}
+        </ul>
+      </div>
+    </div>
+  </footer>
+  {% endif %}
+
+  <!-- Footer Bar -->
+  {% if page.footer_last %}
+  <div id="footer_bar">
+    <div class="container">
+      <div class="bar_content">
+      {{page.footer_last}}
+        {# <ul>
+          <li class="first">
+            Copyright © 2020 Domain Name - All Rights Reserved
+          </li>
+          <li class="second">Powered By somedomain.com</li>
+        </ul> #}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</div>

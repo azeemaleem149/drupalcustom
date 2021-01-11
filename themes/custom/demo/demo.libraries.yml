@@ -1,0 +1,12 @@
+global-css-and-js:
+  version: VERSION
+  css:
+    theme:
+      css/style.css: {}
+      css/mediaqueries.css: {}
+      css/normalize.css: {}
+  js:
+    js/main.js: {}
+  font:
+    theme:
+    font/fontawesome/js/all.js: {}

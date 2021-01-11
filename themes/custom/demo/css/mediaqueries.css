@@ -1,0 +1,250 @@
+/* Medium Devices  */
+@media (max-width: 768px){
+    #main_container #navbar .container ul{
+       flex-direction: column;
+       display: none;   
+       padding-left: 1rem;
+   }
+   #main_container #navbar .container{
+      display: block;
+   }
+   #main_container #navbar{
+       height: auto;
+   }
+  a.icon>svg#burgerG{
+       display: block;
+       right: 1rem;
+       top: 3.5rem;
+       position: absolute;
+       z-index: 100;       
+   }
+   #main_container #navbar .container #order2{
+       display: none;
+     
+   }
+   #main_container #navbar .container #reuseable{
+    display: flex;
+    width: 30%;
+    padding-left: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+    }
+    #block-logoimage{
+    padding-left: 1rem;
+
+    }
+    #block-socialicons{
+        padding-right: 1rem;
+    }
+#main_container #navbar .container ul li.nav_list_items a.all{
+    padding: 8;
+    padding-left: 0;
+    }
+
+    #menu_bar .container .bar{
+        background: #000;
+        height: auto;
+        position: relative;
+    }
+    #menu_bar .container .bar ul.group_items{
+        display:none;
+        flex-direction: column;
+        padding: 1rem;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    #menu_bar .container .bar .group_items li{
+        padding-top: 0.5rem;
+    }
+    #menu_bar .container .bar #bar_header{
+        display: flex;
+        padding:1rem;
+    }
+    a.icon>svg#burgerG1{
+     display: block;
+     position: absolute;
+     z-index: 100;
+     top: 1rem;
+     right: 1rem;
+       
+    }
+    #block-highlightedblock div:nth-child(2){
+        width: 50%;
+    }
+   
+    #block-highlightedblock div:nth-child(2)>img{
+        width: 100%;
+    }
+    #block-highlightedblock div:nth-child(3){
+        padding-left: 20px;
+        width: 50%;
+    }
+    #block-highlightedblock div:nth-child(3)>h2{
+        padding-top: 0px;
+        font-size: 65px;
+    }
+
+    #block-mycustomblock-2 div:nth-child(3)>img{
+        width: 90%;
+    }
+    #block-mycustomblock-2, #block-content2ndcolumn, #block-thirdcolumncontentsection{
+        padding: 0.5rem;
+    }
+    #block-content2ndcolumn div:nth-child(4)>p{
+        padding-bottom: 0.5rem;
+        font-size: 11px;
+        
+    }
+    #block-content2ndcolumn>div:nth-child(3)>div:nth-child(2),#block-content2ndcolumn>div:nth-child(3)>div:nth-child(3){
+        padding-top: 15px;
+    }
+
+    /* #block-firstcolumnfooter, #block-secondcolumnfooter, #block-thirdcolumnfooter, #block-forthcolumnfooter{
+        max-width: 100%;
+    } */
+    #block-forthcolumnfooter{
+        padding: 1.5rem;
+    }
+    #block-content2ndcolumn>div:nth-child(2),#block-mycustomblock-2 div:nth-child(2){
+        font-size: 18px;
+    }
+    #footer .container .footer_container ul.flex-grid li.col4 input.button{
+        width: 100%;
+    }
+
+    #intro .container ul figure{
+        padding-top:10px;
+        padding-right: 30px;
+    }
+    #intro .container ul li.content h1{
+        font-size: 35px;
+        padding-top: 0;   
+    }
+    #intro .container ul li.content p{
+        font-size: 12px; 
+    }
+    #intro .container ul li.content a{
+    font-size: 12px;
+
+    }
+    #content .container .headings ul.flex-grid-first{
+        display: flex;
+        align-items: center;
+    }
+    #content .container .headings ul.flex-grid-first li.flex-grid1{
+        display: flex;
+        font-size: 18px;
+    }
+    #content .container .headings ul.flex-grid li.col .image_cover{
+        width: 85%;
+    }
+    #content .container .headings ul.flex-grid li.col .title_part figure{
+        padding-right: 0;
+    }
+    #content .container .headings ul.flex-grid li.col .title_part figure img{
+        width: 70%;
+    }
+    #footer_bar ul li.first, li.second{
+        padding: 1rem;
+    }
+ 
+}
+
+@media (max-width: 954px){
+    #intro .container ul li.content h1{
+        font-size: 50px;
+        padding-top: 0;   
+    }
+}
+@media (max-width: 758px){
+    #intro .container ul li.content h1{
+        font-size: 30px;
+        padding-top: 0;   
+    }
+}
+@media (max-width: 665px){
+    #intro .container{
+        display: block;
+    }
+    #intro .container ul figure{
+        text-align: center;
+        width: 100%;
+        padding-right: 0px;
+    }
+    #intro .container ul figure img{
+        width: 100%;
+    }
+    #intro .container ul li.content h1{
+        font-size: 30px;
+        padding-top: 0;   
+    }
+    #content .container .headings ul.flex-grid{
+        flex-direction: column;
+    }
+    #content .container .headings ul.flex-grid li.col{
+        flex: none;
+        width: 100%;
+    }
+    #content .container .headings ul.flex-grid li.col .image_cover{
+        width: 97%;
+    }
+    #content .container .headings ul.flex-grid li.col .image_cover figure{
+        width: 100%;
+    }
+    #footer .container .footer_container ul.flex-grid{
+        flex-direction: column;
+    }
+    #footer_bar ul{
+        flex-direction: column;
+    
+    }
+    #footer_bar ul li.second{
+        margin-left: 0;
+        padding-top: 8px;
+    }
+    
+}
+
+/* small Devices  */
+@media (max-width: 576px){
+
+    #header .container{
+        display: block;
+    }
+    
+    #header .container ul.social_icons{
+        padding-left: 1rem;
+    }
+
+    #header .container ul.social_icons li{
+        margin-top: 20px;
+    }
+    #subcontainer div:nth-child(1){
+        display: block;
+    }
+    #block-highlightedblock div:nth-child(2){
+        width: 100%;
+    }
+    #block-highlightedblock div:nth-child(3){
+        padding-left: 10px;
+        width: 100%;
+    }
+    ul.flex-grid>div{
+        display: block;
+    }
+    #block-mycustomblock-2, #block-content2ndcolumn, #block-thirdcolumncontentsection{
+        max-width: 100%;
+    }
+    #block-mycustomblock-2 div:nth-child(3)>img{
+        width: 60%;
+    }
+    #block-content2ndcolumn div:nth-child(4)>p{
+        padding-bottom: 2.5rem;
+    }
+    #block-firstcolumnfooter, #block-secondcolumnfooter, #block-thirdcolumnfooter, #block-forthcolumnfooter{
+        max-width: 100%;
+    }
+    #main_container #navbar .container ul{
+        padding-left: 1rem;
+    }
+}
